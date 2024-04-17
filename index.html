@@ -4,9 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .item-details {
+            max-width: 400px;
+        }
+        .item-details .full-details {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Q1</h1>
+<a onclick="alert('welcome')" href="#">CLICK HERE</a>
+<h1>Q2</h1>
+<div>
+<img width="150px" height="200px" onclick="alert('ty for purchasing')" src="pics/apple.jpg" alt="">
+<img width="150px" height="200px" onclick="alert('ty for purchasing')" src="pics/apple1.png" alt="">
+<img width="150px" height="200px" onclick="alert('ty for purchasing')" src="pics/mobile.jpg" alt="">
+</div>
+<h1>Q3</h1>
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>John Doe</td>
+            <td>18</td>
+            <td>12</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>17</td>
+            <td>11</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Jack Seth</td>
+            <td>19</td>
+            <td>13</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<h1>Q4</h1>
+<img width="200px" height="250px" id="myImage" onmouseover="over()" onmouseout="out()" src="pics/mob.jpg" alt="">
+
+<h2>Q5</h2>
+<p id="counter">0</p>
+
+<button onclick="increaseCounter()">Increase</button>
+<button onclick="decreaseCounter()">Decrease</button>
+
+<h2>Q6--- Signup Form</h2>
+
+<form id="signupForm" onsubmit="submitForm(event)">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<h1>Q7</h1>
+<div class="item-details">
+    <h2>Item Name</h2>
+    <p>Summary of Lorem ipsum dolor sit amet. details...</p>
+    <div class="full-details">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, consequatur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, exercitationem? Excepturi tenetur alias sint consequuntur.</p>
+    </div>
+    <button onclick="toggleDetails(this)">Read more</button>
+</div>
+
+<h2>Q8--- Student Details Form</h2>
+
+<form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age"><br><br>
+    <label for="grade">Grade:</label><br>
+    <input type="text" id="grade" name="grade"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
 <script src="app.js"></script>
 </body>
 </html>
